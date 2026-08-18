@@ -1,0 +1,436 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    overflow:hidden;
+    height:100vh;
+    background:linear-gradient(180deg,#050517,#180b3d,#31115d,#4b1d79);
+    color:white;
+}
+
+/* Container */
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    position:relative;
+    z-index:5;
+    padding-top:30px;
+
+}
+
+/* Title */
+
+.title{
+    font-size:52px;
+    color:#fff;
+    text-shadow:
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 60px #8a2be2;
+    animation:glow 2s infinite alternate;
+}
+
+.subtitle{
+    margin-top:10px;
+    font-size:24px;
+    color:#ffc9ff;
+}
+
+@keyframes glow{
+
+from{
+text-shadow:
+0 0 10px #ff00ff,
+0 0 20px #ff00ff;
+}
+
+to{
+
+text-shadow:
+0 0 20px #ffffff,
+0 0 40px #ff00ff,
+0 0 70px #8a2be2;
+
+}
+
+}
+
+/* Slideshow */
+
+.slideshow{
+
+    margin-top:25px;
+    width:700px;
+    height:420px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    border:4px solid white;
+
+    box-shadow:
+        0 0 25px #ff00ff,
+        0 0 60px #8a2be2;
+
+}
+
+.slideshow img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1s;
+
+}
+
+/* Gift */
+
+#gift{
+
+    position:relative;
+
+    margin-top:45px;
+
+    width:180px;
+    height:180px;
+
+    cursor:pointer;
+
+    transition:1s;
+
+}
+
+.box{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:180px;
+    height:120px;
+
+    background:#ff0066;
+
+    border-radius:15px;
+
+}
+
+.lid{
+
+    position:absolute;
+
+    top:30px;
+
+    width:180px;
+    height:35px;
+
+    background:#ff4da6;
+
+    border-radius:15px;
+
+    transition:1s;
+
+}
+
+.ribbonV{
+
+    position:absolute;
+
+    left:82px;
+
+    width:16px;
+
+    height:180px;
+
+    background:gold;
+
+}
+
+.ribbonH{
+
+    position:absolute;
+
+    top:72px;
+
+    width:180px;
+
+    height:16px;
+
+    background:gold;
+
+}
+
+#gift:hover{
+
+transform:scale(1.08);
+
+}
+
+/* Click Text */
+
+.clickText{
+
+margin-top:20px;
+font-size:22px;
+animation:blink 1s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:.3;
+
+}
+
+}
+
+/* Birthday Content */
+
+#birthdayContent{
+
+    display:none;
+
+    opacity:0;
+
+    transition:1s;
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+#birthdayContent h2{
+
+font-size:45px;
+color:#ffd700;
+text-shadow:0 0 20px gold;
+
+}
+
+#birthdayContent p{
+
+margin-top:15px;
+font-size:22px;
+max-width:700px;
+
+}
+
+/* Cake */
+
+.cake{
+
+    position:relative;
+
+    margin:40px auto;
+
+    width:260px;
+    height:250px;
+
+}
+
+.plate{
+
+position:absolute;
+bottom:0;
+width:220px;
+height:20px;
+background:#ddd;
+border-radius:50%;
+
+}
+
+.layer{
+
+position:absolute;
+left:25px;
+width:170px;
+border-radius:10px;
+
+}
+
+.bottom{
+
+bottom:20px;
+height:70px;
+background:#ff80ab;
+
+}
+
+.middle{
+
+bottom:80px;
+height:55px;
+background:#ff4da6;
+
+}
+
+.top{
+
+bottom:130px;
+height:45px;
+background:#ff1493;
+
+}
+
+.icing{
+
+position:absolute;
+bottom:165px;
+left:25px;
+width:170px;
+height:12px;
+background:white;
+border-radius:20px;
+
+}
+
+.candle{
+
+position:absolute;
+left:104px;
+bottom:177px;
+width:12px;
+height:35px;
+background:white;
+
+}
+
+.flame{
+
+position:absolute;
+top:-18px;
+left:-4px;
+width:20px;
+height:20px;
+background:gold;
+border-radius:50%;
+animation:flicker .25s infinite;
+
+}
+
+@keyframes flicker{
+
+50%{
+
+transform:scale(.8);
+
+}
+
+}
+
+/* Stars */
+
+#stars{
+
+position:absolute;
+width:100%;
+height:100%;
+pointer-events:none;
+
+}
+
+.star{
+
+position:absolute;
+width:4px;
+height:4px;
+background:white;
+border-radius:50%;
+animation:twinkle 2s infinite;
+
+}
+
+@keyframes twinkle{
+
+50%{
+
+opacity:.2;
+transform:scale(.5);
+
+}
+
+}
+
+/* Balloons */
+
+#balloons{
+
+position:absolute;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+
+}
+
+.balloon{
+
+position:absolute;
+bottom:-180px;
+width:60px;
+height:80px;
+border-radius:50%;
+animation:float linear infinite;
+
+}
+
+.balloon::after{
+
+content:"";
+position:absolute;
+width:2px;
+height:70px;
+background:white;
+left:29px;
+top:80px;
+
+}
+
+@keyframes float{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-130vh);
+
+}
+
+}
+
+#gift:hover{
+
+    transform:scale(1.1) rotate(-3deg);
+
+}
+
+body{
+
+    cursor:default;
+
+}
+
+.slideshow img:hover{
+
+    transform:scale(1.05);
+
+}
