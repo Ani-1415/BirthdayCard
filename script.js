@@ -14,11 +14,11 @@ const clickText = document.getElementById("clickText");
 // ---------------------
 
 const photos = [
-    "bts/photo1.jpg",
-    "bts/photo2.jpg",
-    "bts/photo3.jpg",
-    "bts/photo4.jpg",
-    "bts/photo5.jpg"
+    "bts/photo1.jpeg",
+    "bts/photo2.jpeg",
+    "bts/photo3.jpeg",
+    "bts/photo4.jpeg",
+    "bts/photo5.jpeg"
 ];
 
 let current = 0;
