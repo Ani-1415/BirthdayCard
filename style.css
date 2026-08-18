@@ -434,3 +434,95 @@ body{
     transform:scale(1.05);
 
 }
+
+/* ===========================
+   Mobile Responsive Design
+=========================== */
+
+@media (max-width: 768px) {
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .container{
+        padding:20px;
+        justify-content:flex-start;
+        padding-top:40px;
+    }
+
+    .title{
+        font-size:34px;
+        text-align:center;
+    }
+
+    .subtitle{
+        font-size:18px;
+        text-align:center;
+        margin-top:10px;
+        padding:0 15px;
+    }
+
+    .slideshow{
+        width:95%;
+        max-width:340px;
+        height:220px;
+        margin-top:20px;
+    }
+
+    #gift{
+        width:120px;
+        height:120px;
+        margin-top:25px;
+    }
+
+    .box{
+        width:120px;
+        height:80px;
+    }
+
+    .lid{
+        width:120px;
+        height:25px;
+        top:20px;
+    }
+
+    .ribbonV{
+        left:54px;
+        width:12px;
+        height:120px;
+    }
+
+    .ribbonH{
+        width:120px;
+        top:48px;
+        height:12px;
+    }
+
+    .clickText{
+        font-size:20px;
+        text-align:center;
+    }
+
+    #birthdayContent{
+        width:95%;
+        margin-top:20px;
+    }
+
+    #birthdayContent h2{
+        font-size:32px;
+    }
+
+    #birthdayContent p{
+        font-size:18px;
+        line-height:1.6;
+        padding:0 10px;
+    }
+
+    .cake{
+        width:180px;
+        height:180px;
+        transform:scale(.9);
+    }
+
+}
