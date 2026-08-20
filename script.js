@@ -23,6 +23,7 @@ const photos = [
 
 let current = 0;
 
+if (slide) {
 setInterval(() => {
 
     current++;
@@ -38,7 +39,8 @@ setInterval(() => {
         slide.style.opacity = "1";
     }, 500);
 
-}, 3000);
+}, 3000); 
+}
 
 // ---------------------
 // Stars
@@ -128,9 +130,12 @@ function openGift() {
 
     // Gift animation
     gift.style.transform = "scale(1.1)";
+ 
+    const lid = document.querySelector(".lid");
 
-    document.querySelector(".lid").style.transform =
-        "translateY(-120px) rotate(-35deg)";
+if (lid) {
+    lid.style.transform = "translateY(-120px) rotate(-35deg)";
+}
 
     // Show birthday content
     birthdayContent.style.display = "block";
